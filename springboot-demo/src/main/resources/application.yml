@@ -1,0 +1,13 @@
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://182.92.204.111:3306/test2
+    username: root
+    password: Ik7xTy6vDk1$e59OpVd8
+  jpa:
+    hibernate:
+      ddl-auto: update		#如果是create，在install后会自动在数据库中创建实体对象对应的表，如果库中已存在，则先删除表后再创建。如果是update，则第一次也会创建表，如果库中已存在表，则不会删除在创建，会保留表。如果是create-drop，则应用停止后会删除表。如果是none，则什么也不操作。如果是validate，则会验证实体与表结构是否一致，如果不一致则会报错。
+    show-sql: true
